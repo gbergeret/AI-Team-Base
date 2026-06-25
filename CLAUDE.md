@@ -28,5 +28,12 @@ brief; if QA returns defects, it goes back to the EA to revise and QA checks
 again, up to 3 rounds. If it still has not passed after 3 rounds, CoS stops and
 escalates to me with the gap. Only a PASS (or that escalation) reaches me.
 
+## Playbooks
+Playbooks in `playbooks/` are saved procedures. Some run on demand: when the
+user uses a playbook's trigger word, run that playbook. The triggers are listed
+in `playbooks/README.md`. Available now:
+- "save" (or "save to main") -> run `playbooks/001-save-to-main.md`
+- "reload" (or "rebase from main") -> run `playbooks/002-rebase-from-main.md`
+
 ## Keep memory current
 Update `MEMORY.md` in place when you learn something. Replace what is outdated.
